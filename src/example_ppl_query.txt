@@ -1,0 +1,3 @@
+search source=otel
+| where resource.service.name="recommendationservice"
+| where match(body, "ListRecommendations")
